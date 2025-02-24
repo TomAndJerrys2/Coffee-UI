@@ -1,12 +1,16 @@
 {
   "name": "coffee-front-end",
   "version": "0.0.0",
+  "main": "app.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "electron": "electron .",
+    "electron-build": "ng build",
+    "serve:ssr:CoffeeFrontEnd": "node dist/CoffeeFrontEnd/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +31,8 @@
     "@angular/cli": "^19.1.8",
     "@angular/compiler-cli": "^19.1.0",
     "@types/jasmine": "~5.1.0",
+    "bootstrap": "^5.3.3",
+    "electron": "^34.2.0",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
